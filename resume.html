@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Deepak Kumar M</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --card: #f8fafc;
+      --border: #e5e7eb;
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b1220;
+      --text: #e6eef8;
+      --muted: #93a3bb;
+      --accent: #60a5fa;
+      --card: #07101a;
+      --border: #1e293b;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, system-ui, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 1.25rem; }
+    header {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+    h1 { margin: 0 0 0.25rem; font-size: 1.875rem; }
+    .contact {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .contact a { color: var(--accent); text-decoration: none; }
+    h2 {
+      margin: 1.5rem 0 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      font-size: 1.25rem;
+    }
+    .section { margin-bottom: 2rem; }
+    .entry {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .entry:last-child { border-bottom: none; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+    .title { font-weight: 600; font-size: 1rem; }
+    .company { color: var(--accent); }
+    .duration { color: var(--muted); font-size: 0.9rem; }
+    .degree { font-weight: 600; }
+    .school { color: var(--accent); }
+    .gpa { color: var(--muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .skill-category { }
+    .skill-category strong { color: var(--accent); }
+    .skill-category p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+    @media (max-width: 640px) {
+      h1 { font-size: 1.5rem; }
+      .contact { flex-direction: column; gap: 0.25rem; }
+      .entry-header { flex-direction: column; }
+      .duration { margin-top: 0.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+
+    <header>
+      <h1>Deepak Kumar M</h1>
+      <div class="contact">
+        <span>📱 +91 938-561-5613</span>
+        <span>📧 <a href="mailto:deepakmoorthi74@gmail.com">deepakmoorthi74@gmail.com</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/deepakkumar-m-b2663a223" target="_blank">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="degree">B.Tech in AI/Data Science</span>, <span class="school">M.Kumarasamy College of Engineering</span></span>
+          <span class="duration">May 2024</span>
+        </div>
+        <p class="gpa">CGPA: 7.2/10</p>
+        <p><strong>Coursework:</strong> Data Structures & Algorithms, Machine Learning, NLP, Computer Vision, Neural Networks, Database Systems, Web Development, Operating Systems, Software Engineering</p>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="degree">Diploma in Mechanical Engineering</span>, <span class="school">Konghu Velalar Polytechnic College</span></span>
+          <span class="duration">May 2019</span>
+        </div>
+        <p class="gpa">CGPA: 7.2/10</p>
+        <p><strong>Coursework:</strong> Engineering Drawing, Strength of Materials, Thermodynamics, Fluid Mechanics, Manufacturing Processes, CAD/CAM, Metrology, Automobile Engineering</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Programming</strong>
+          <p>Python, Pega, Java, HTML/CSS, SQL</p>
+        </div>
+        <div class="skill-category">
+          <strong>Web Development</strong>
+          <p>React.js, Node.js, Express, Flask, Tailwind CSS, RESTful APIs</p>
+        </div>
+        <div class="skill-category">
+          <strong>AI/Data Science</strong>
+          <p>TensorFlow, LangChain, OpenAI API, Vector Databases, Scikit-learn, NLTK</p>
+        </div>
+        <div class="skill-category">
+          <strong>DevOps & Tools</strong>
+          <p>MongoDB, MySQL, Firebase, Git, GitHub, Streamlit, Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="title">Technical Trainer</span>, <span class="company">Way2Me</span></span>
+          <span class="duration">Mar 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Conducted project-based sessions in Machine Learning, Deep Learning, IoT, and Python, improving practical understanding by 45%</li>
+          <li>Mentored 50+ learners on career paths, projects, and technical challenges</li>
+          <li>Developed structured modules and lab exercises that reduced learning time</li>
+          <li>Guided learners to build and deploy mini AI/IoT projects for industry readiness</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="title">Automation Intern</span>, <span class="company">Clover Technologies</span></span>
+          <span class="duration">Aug 2024 – Feb 2025</span>
+        </div>
+        <ul>
+          <li>Designed Python-driven IoT control modules interfacing with sensors and actuators</li>
+          <li>Developed and tested ladder-logic programs on Programmable Logic Controllers (PLC)</li>
+          <li>Created detailed system documentation and conducted peer training sessions</li>
+          <li>Provided technical knowledge transfer on IoT protocols and ML fundamentals</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="title">CNC Operator</span>, <span class="company">ZF Wind Power Pvt. Ltd.</span></span>
+          <span class="duration">2019 – 2021</span>
+        </div>
+        <ul>
+          <li>Operated and monitored CNC machines for high-accuracy component manufacturing in wind turbine systems</li>
+          <li>Analyzed engineering drawings and CAD models to ensure correct machine setup</li>
+          <li>Identified and resolved machine issues, minimizing downtime</li>
+          <li>Performed continuous inspections to maintain tight tolerances and safety standards</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="title">Smart Assistant – REPLICA</span></span>
+        </div>
+        <p><strong>Technologies:</strong> Python, NLP, Speech Recognition, Voice Authentication, Flask, MySQL</p>
+        <ul>
+          <li>Built a voice-driven system using Python, NLP, and SpeechRecognition for secure access to student information</li>
+          <li>Implemented biometric voice verification and automatic language identification using Librosa and Scikit-learn</li>
+          <li>Developed an interactive web platform with Flask/Streamlit, role-based access control, and encrypted data handling</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span><span class="title">SecureX – Intelligent Security Browser Extension</span></span>
+        </div>
+        <p><strong>Technologies:</strong> JavaScript, Chrome Extension API, Flask, TensorFlow.js, Beautiful Soup, SQLite</p>
+        <ul>
+          <li>Architected a browser extension that protects users from phishing attacks by analyzing URLs and page content in real-time</li>
+          <li>Developed and trained a TensorFlow model achieving 93% accuracy in phishing detection</li>
+          <li>Engineered lightweight extension consuming only 50MB memory through efficient background workers</li>
+          <li>Implemented cross-browser compatibility across Chrome, Firefox, and Edge with single codebase</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Certifications & Awards</h2>
+      <ul>
+        <li>Certified System Architect – PEGA (8.8)</li>
+        <li>Certified Senior System Architect – PEGA (8.8)</li>
+        <li>Google Project Management Certificate – Coursera</li>
+        <li>Geo-data Analysis – ISRO</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if(saved === 'dark') root.setAttribute('data-theme', 'dark');
+  </script>
+</body>
+</html>
