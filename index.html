@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Portfolio — Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Your Name</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&crop=faces" alt="Profile">
+        <div>
+          <h2>Hi — I'm Your Name</h2>
+          <p>Front-end developer focused on beautiful, accessible UI and performant web apps.</p>
+          <p><a class="cta" href="#contact">Get in touch</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I build modern websites using HTML, CSS and JavaScript. I enjoy clean design, fast performance and thoughtful UX.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Short description of the project. Built with HTML, CSS, JS.</p>
+          <p><a href="#">View</a> • <a href="#">Source</a></p>
+        </article>
+
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description of the project. Demo and code links.</p>
+          <p><a href="#">View</a> • <a href="#">Source</a></p>
+        </article>
+
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Short description of the project. Responsive and accessible.</p>
+          <p><a href="#">View</a> • <a href="#">Source</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Send</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Your Name — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
